@@ -1,0 +1,13 @@
+{
+  "name": "vgg-verstka",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#v4-dev",
+    "jquery": "^3.2.1",
+    "components-font-awesome": "~4.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1"
+  }
+}
