@@ -27,7 +27,7 @@
       padding-left: 50px;
       .card {
         overflow: visible;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         .header_questions {
           background: $white;
           color: $gray-text;
@@ -48,11 +48,11 @@
             }
 
             .active_border_top {
-              border-top: 1px solid $border-color);
+              border-top: 1px solid $border-color;
             }
 
             .active_border_bottom {
-              border-bottom: 1px solid $border-color);
+              border-bottom: 1px solid $border-color;
             }
 
             .card_accordion_header {
@@ -63,7 +63,7 @@
               width: calc(100% + 10%);
               margin-left: -5%;
               background: $white;
-              border: 1px solid $border-color);
+              border: 1px solid $border-color;
             }
 
             .card_accordion_header {
