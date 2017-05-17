@@ -38,11 +38,16 @@
           font-weight: 300;
           padding: 20px 30px;
         }
+
         .card_accordion {
           border: none;
           font-size: 14px;
           color: $gray-text;
           &.active {
+            &:first-child {
+              margin-top: calc(-1.25rem - 1px);
+            }
+
             .active_border {
               background: $gray-background;
               height: 10px;
