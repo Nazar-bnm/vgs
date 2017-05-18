@@ -156,3 +156,18 @@
     top: 60px;
   }
 }
+
+@media (max-width: 576px) {
+  #faq {
+    .card_accordion {
+      &.active {
+        .card_accordion_header, .panel-collapse {
+          width: 100%;
+          margin-left: 0;
+          border-left: none;
+          border-right: none;
+        }
+      }
+    }
+  }
+}
