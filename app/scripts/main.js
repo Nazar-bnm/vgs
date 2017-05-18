@@ -15,12 +15,44 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
+    // height from top page to element
+    var section1Height = $('#section-1').offset().top - $(window).height() / 2;
+    var section2Height = $('#section-2').offset().top - $(window).height() / 2;
+    var section3Height = $('#section-3').offset().top - $(window).height() / 2;
+    var section4Height = $('#section-4').offset().top - $(window).height() / 2;
+    var section5Height = $('#section-5').offset().top - $(window).height() / 2;
+    var section6Height = $('#section-6').offset().top - $(window).height() / 2;
+
+    // fixed menu and header
     if (scroll > 180) {
       $('.nav-menu').addClass('nav-menu-fixed');
       $('.header').addClass('gradient-bg');
     } else {
       $('.nav-menu').removeClass('nav-menu-fixed');
       $('.header').removeClass('gradient-bg');
+    }
+
+    // add class to active link
+    if (scroll < section2Height) {
+      $('.nav-link').removeClass('active');
+      $('#nav-link-1').addClass('active');
+    } else if (scroll > section2Height && scroll < section3Height) {
+      $('.nav-link').removeClass('active');
+      $('#nav-link-2').addClass('active');
+    } else if (scroll > section3Height && scroll < section4Height) {
+      $('.nav-link').removeClass('active');
+      $('#nav-link-3').addClass('active');
+    } else if (scroll > section4Height && scroll < section5Height) {
+      $('.nav-link').removeClass('active');
+      $('#nav-link-4').addClass('active');
+    } else if (scroll > section5Height && scroll < section6Height) {
+      $('.nav-link').removeClass('active');
+      $('#nav-link-5').addClass('active');
+    }
+
+    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('.nav-link').removeClass('active');
+      $('#nav-link-6').addClass('active');
     }
   });
 
