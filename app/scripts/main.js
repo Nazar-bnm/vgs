@@ -16,12 +16,12 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     // height from top page to element
-    var section1Height = $('#section-1').offset().top - $(window).height() / 2;
-    var section2Height = $('#section-2').offset().top - $(window).height() / 2;
-    var section3Height = $('#section-3').offset().top - $(window).height() / 2;
-    var section4Height = $('#section-4').offset().top - $(window).height() / 2;
-    var section5Height = $('#section-5').offset().top - $(window).height() / 2;
-    var section6Height = $('#section-6').offset().top - $(window).height() / 2;
+    var section1Height = $('#section-1').offset().top - 150;
+    var section2Height = $('#section-2').offset().top - 150;
+    var section3Height = $('#section-3').offset().top - 150;
+    var section4Height = $('#section-4').offset().top - 150;
+    var section5Height = $('#section-5').offset().top - 150;
+    var section6Height = $('#section-6').offset().top - 150;
 
     // fixed menu and header
     if (scroll > 180) {
